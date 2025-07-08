@@ -1,3 +1,17 @@
+document.addEventListener("DOMContentLoaded", () => {
+  const cookieBox = document.getElementById("cookie-notification");
+  const acceptBtn = document.getElementById("accept-cookies");
+
+  if (localStorage.getItem("cookiesAccepted") === "true") {
+    cookieBox.classList.add("hidden");
+  }
+
+  acceptBtn.addEventListener("click", () => {
+    localStorage.setItem("cookiesAccepted", "true");
+    cookieBox.classList.add("hidden");
+  });
+});
+
 async function fetchEpisodes() {
     try {
       const res = await fetch('https://api.tvmaze.com/shows/194/episodes');
@@ -92,15 +106,5 @@ window.addEventListener('scroll', () => {
   });
   
   
-  const cookieBanner = document.getElementById('cookie-banner');
-  const cookieAcceptBtn = document.getElementById('cookie-accept');
-  
-  if (localStorage.getItem('cookiesAccepted')) {
-    cookieBanner.style.display = 'none';
-  }
-  
-  cookieAcceptBtn.addEventListener('click', () => {
-    localStorage.setItem('cookiesAccepted', 'true');
-    cookieBanner.style.display = 'none';
-  });
-  
+
+
