@@ -314,7 +314,7 @@ footer {
     text-align: center;
     padding: 1rem 0;
   }
-  .nav-links.show {
+  .nav-links.active {
     display: flex;
   }
   .burger {
