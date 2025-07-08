@@ -1,0 +1,274 @@
+@font-face {
+  font-family: "Calgary";
+  src: url(./fonts/myfonts_order_6567503331498/CalgarySerial.otf);
+}
+
+body {
+  font-family: "Space Grotesk";
+  margin: 0;
+  padding: 0;
+  background-color: #111;
+  color: #eee;
+  line-height: 1.6;
+}
+
+h1,
+h2 {
+  text-align: center;
+  margin-top: 2rem;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #000;
+  z-index: 1000;
+}
+header.scrolled {
+  background-color: red;
+  transition: background-color 0.3s ease;
+}
+
+header.scrolled .logo {
+  color: white;
+  transition: color 0.3s ease;
+}
+
+header.scrolled .nav-links a {
+  color: white;
+  transition: color 0.3s ease;
+}
+header.scrolled .nav-links li a:hover {
+  color: black;
+}
+
+.navbar {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.logo {
+  font-family: "Calgary";
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: crimson;
+  text-decoration: none;
+}
+.logo:hover {
+  color: #ff4c4c;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 2rem;
+}
+
+.nav-links li a {
+  color: #eee;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: crimson;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+}
+
+.burger div {
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+.hero {
+  background: url("./images/c203d8173ef5204aac72e848515afb55.jpg") no-repeat
+    center center/cover;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+  padding: 2rem;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero p {
+  font-size: 1.2rem;
+}
+
+section {
+  padding: 4rem 2rem;
+}
+
+.about,
+.characters,
+.episodes,
+.quotes,
+.contact {
+  max-width: 900px;
+  margin: auto;
+}
+
+.character-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+.character-cards .card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.character-cards .card {
+  background-color: #222;
+  padding: 1rem;
+  border-radius: 10px;
+  transition: transform 0.3s;
+  text-align: center;
+}
+
+.character-cards .card:hover {
+  transform: scale(1.05);
+  background-color: #333;
+}
+#episodes {
+  padding: 4rem 2rem;
+  background-color: #111;
+  color: #eee;
+  text-align: center;
+}
+
+.episodes-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.episode-card {
+  background-color: #1c1c1c;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: left;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
+  transition: transform 0.3s ease;
+}
+
+.episode-card:hover {
+  transform: translateY(-5px);
+}
+
+.episode-card h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+
+.episode-card p {
+  font-size: 0.9rem;
+  color: #ccc;
+}
+
+.episode-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  color: #ff4d4d;
+  text-decoration: none;
+  font-size: 0.85rem;
+}
+
+.episode-list .episode {
+  background-color: #1a1a1a;
+  margin: 0.5rem 0;
+  padding: 1rem;
+  border-left: 5px solid crimson;
+}
+
+blockquote {
+  font-style: italic;
+  border-left: 5px solid crimson;
+  padding-left: 1rem;
+  margin: 1rem 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+form input,
+form textarea,
+form button {
+  padding: 0.8rem;
+  border: none;
+  border-radius: 5px;
+}
+.show-password-container {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  color: #ccc;
+  font-size: 0.9rem;
+}
+
+form button {
+  background-color: crimson;
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: darkred;
+}
+
+footer {
+  background-color: #000;
+  text-align: center;
+  padding: 1rem;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #000;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+  }
+  .nav-links.show {
+    display: flex;
+  }
+  .burger {
+    display: block;
+  }
+}

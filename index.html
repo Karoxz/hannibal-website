@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hannibal Fanpage</title>
+  <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Space+Grotesk:wght@300..700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+        <a href="index.html" class="logo">Hannibal</a>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="#about">About</a></li>
+        <li><a href="#characters">Characters</a></li>
+        <li><a href="#episodes">Episodes</a></li>
+        <li><a href="#quotes">Quotes</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <div class="line1"></div>
+        <div class="line2"></div>
+        <div class="line3"></div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <h1>Welcome to the Mind of a Killer</h1>
+    <p>Explore the world of Hannibal Lecter</p>
+  </section>
+
+  <section id="about" class="about">
+    <h2>About the Series</h2>
+    <p><strong>Hannibal</strong> is a psychological thriller television series developed by Bryan Fuller, based on characters from the Thomas Harris novels.</p>
+  </section>
+
+  <section id="characters" class="characters">
+    <h2>Main Characters</h2>
+    <div class="character-cards">
+      <div class="card">
+        <img src="./images/Mads Mikkelsen Profile.jpeg" alt="Hannibal Lecter" style="width:100%; border-radius: 8px;">
+        <h3>Hannibal Lecter</h3>
+        <p>A brilliant psychiatrist and secret cannibalistic serial killer.</p>
+      </div>
+      <div class="card">
+        <img src="./images/Will Graham.jpg" alt="Will Graham" style="width:100%; border-radius: 8px;">
+        <h3>Will Graham</h3>
+        <p>An FBI profiler with empathy disorder who can see into the minds of killers.</p>
+      </div>
+      <div class="card">
+        <img src="./images/Alana Bloom.jpg" alt="Alana Bloom" style="width:100%; border-radius: 8px;">
+        <h3>Alana Bloom</h3>
+        <p>A psychology professor and consultant for the FBI, drawn into the Hannibal-Will dynamic.</p>
+      </div>
+      <div class="card">
+        <img src="./images/Jack crawford.jpg" alt="Jack Crawford" style="width:100%; border-radius: 8px;">
+        <h3>Jack Crawford</h3>
+        <p>Head of the Behavioral Science Unit of the FBI, who oversees Will and the investigations.</p>
+      </div>
+  </section>
+  
+
+  <section id="episodes">
+    <h2>Episodes</h2>
+    <div id="episodes-container" class="episodes-grid"></div>
+  </section>
+  
+
+  <section id="quotes" class="quotes">
+    <h2>Famous Quotes</h2>
+    <blockquote>"Killing must feel good to God too."</blockquote>
+    <blockquote>"The tragedy is not to die, but to be wasted."</blockquote>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <form id="contact-form">
+      <input type="text" id="name" placeholder="Your Name" required />
+      <input type="email" id="email" placeholder="Your Email" required />
+      <textarea id="message" placeholder="Message..." required></textarea>
+      <input type="password" id="password" placeholder="Create Password" required />
+      <div class="show-password-container">
+        <input type="checkbox" id="showPassword" />
+        <label for="showPassword">Show Password</label>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Hannibal Fanpage</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
